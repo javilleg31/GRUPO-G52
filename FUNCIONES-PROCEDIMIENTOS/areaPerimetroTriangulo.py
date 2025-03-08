@@ -4,6 +4,7 @@ Restricciones para calcular el área NO se requiere de la altura
 perimetro = lado1 + lado2 + lado3
 '''
 import math
+import os
 
 #cuerpo o definicion de la funcion con retorno a donde fue llamado
 def calcularPerimetro( lado1, lado2, lado3):
@@ -17,23 +18,34 @@ def calcularArea( lado1, lado2, lado3 ):
 
 #PROCEDIMIENTO
 def mostrarPerimetro(lado1, lado2, lado3, perimetro):
-    print("*" * 50)
+    print("\n\n", "*" * 50)
     print(" LADO1    LADO2    LADO3  PERIMETRO")
     print("*" * 50)
     print(f"{lado1} \t {lado2} \t {lado3} \t {perimetro}") 
 
 #PROCEDIMIENTO no retorna valor
 def mostrarArea(lado1, lado2, lado3, area):
-    print("*" * 50)
+    print("\n\n", "*" * 50)
     print(" LADO1    LADO2    LADO3  AREA")
     print("*" * 50)
     print(f"{lado1} \t {lado2} \t {lado3} \t {area:.2f}") 
 
+def leerNumero( etiqueta ):
+    return float(input( etiqueta ))
 
 #ENTRADAS - BURBUJA LEER DATOS
+'''
 lado1 = float(input("LADO 1: "))
 lado2 = float(input("LADO 2: "))
 lado3 = float(input("LADO 3: "))
+'''
+#inicio del programa
+os.system("cls")   #limpia la pantalla del terminal 
+
+#INVOCAMOS UNA FUNCION QUE PERMITA LEER CUALQUIER NUMERO, CON DIFERENTE ETIQUETA
+lado1 = leerNumero("LADO 1:")
+lado2 = leerNumero("LADO 2:")
+lado3 = leerNumero("LADO 3:")
 
 #PROCESOS
 area = calcularArea( lado1, lado2, lado3 )
