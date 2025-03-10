@@ -4,8 +4,7 @@ Restricciones para calcular el área NO se requiere de la altura
 perimetro = lado1 + lado2 + lado3
 '''
 import math
-import os
-
+import libreria
 #cuerpo o definicion de la funcion con retorno a donde fue llamado
 def calcularPerimetro( lado1, lado2, lado3):
     return lado1 + lado2 + lado3
@@ -32,6 +31,8 @@ def mostrarArea(lado1, lado2, lado3, area):
 
 def leerNumero( etiqueta ):
     return float(input( etiqueta ))
+
+libreria.limpiarPantalla() 
 
 #ENTRADAS - BURBUJA LEER DATOS
 '''
