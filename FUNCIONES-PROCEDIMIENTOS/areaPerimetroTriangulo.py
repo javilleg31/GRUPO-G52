@@ -5,6 +5,7 @@ perimetro = lado1 + lado2 + lado3
 '''
 import math
 import libreria
+
 #cuerpo o definicion de la funcion con retorno a donde fue llamado
 def calcularPerimetro( lado1, lado2, lado3):
     return lado1 + lado2 + lado3
@@ -32,8 +33,6 @@ def mostrarArea(lado1, lado2, lado3, area):
 def leerNumero( etiqueta ):
     return float(input( etiqueta ))
 
-libreria.limpiarPantalla() 
-
 #ENTRADAS - BURBUJA LEER DATOS
 '''
 lado1 = float(input("LADO 1: "))
@@ -41,7 +40,7 @@ lado2 = float(input("LADO 2: "))
 lado3 = float(input("LADO 3: "))
 '''
 #inicio del programa
-os.system("cls")   #limpia la pantalla del terminal 
+libreria.system("cls")   #limpia la pantalla del terminal 
 
 #INVOCAMOS UNA FUNCION QUE PERMITA LEER CUALQUIER NUMERO, CON DIFERENTE ETIQUETA
 lado1 = leerNumero("LADO 1:")
