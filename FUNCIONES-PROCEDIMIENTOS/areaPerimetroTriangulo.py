@@ -40,7 +40,8 @@ lado2 = float(input("LADO 2: "))
 lado3 = float(input("LADO 3: "))
 '''
 #inicio del programa
-libreria.system("cls")   #limpia la pantalla del terminal 
+libreria.limpiarPantalla()   #limpia la pantalla del terminal 
+libreria.cabecera( "PROGRAMA AREA Y PERIMETRO DEL TRIANGULO")
 
 #INVOCAMOS UNA FUNCION QUE PERMITA LEER CUALQUIER NUMERO, CON DIFERENTE ETIQUETA
 lado1 = leerNumero("LADO 1:")

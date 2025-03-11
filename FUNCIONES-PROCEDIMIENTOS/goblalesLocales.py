@@ -1,3 +1,5 @@
+cabecera( "VARIABLES GLOBALES Y LOCALES")
+
 x = 10      # Variable global 
 print(f"X INICIANDO: {x}")
 # Definimos o construimos la estructura de la función que va ser invocada o llamada
