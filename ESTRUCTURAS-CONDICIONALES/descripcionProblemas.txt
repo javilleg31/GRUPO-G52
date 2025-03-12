@@ -1,0 +1,4 @@
+Desarrollar un pequeño traductor de 
+colores primarios (amarillo, azul, rojo, verde, naranja), 
+donde se ingresa el color en español y el sistema retorna el color en ingles; utilizar match-case. Validar que el usuario lo puede ingresar en mayúsculas o minúsculas o Capital y será indiferente; 
+por ejemplo: Amarillo, amarillo, AMARILLO, el resultado siempre será YELLOW

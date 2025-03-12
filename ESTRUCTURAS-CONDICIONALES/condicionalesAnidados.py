@@ -8,6 +8,7 @@ ANALISIS
               mayor = numero4   ??? numero4 sea mayor a todos
     SALIDAS : mayor
 '''
+import libreria
 
 def leerNumero( etiqueta ):
     return float(input( etiqueta ))
@@ -28,6 +29,9 @@ def generarSalida (numero1, numero2, numero3, numero4, mayor):
     print("NUMERO1 NUMERO2 NUMERO3 NUMERO4 MAYOR")
     print(f"{numero1} \t {numero2}  \t {numero3}  \t {numero4}  \t {mayor}")
 
+#AQUI INICIA EL PROGRAMA
+libreria.limpiarPantalla()
+
 #VARIABLES GLOBALES INICIALIZADAS
 numero1=0
 numero2=0
@@ -46,3 +50,8 @@ mayor = encontrarMayor ( numero1, numero2, numero3, numero4 )
 
 #GENERA SALIDAS
 generarSalida (numero1, numero2, numero3, numero4, mayor)
+
+#limpiar pantalla al finalizar
+#libreria.mensajeEsperaSegundos( "Saliendo del Programa - Gracias por Utilizarnos", 2 )  #espera un segunto para ver el resultado
+libreria.mensajeEsperaEnter ( "Gracias por Utilizarnos ENTER Salir de programa")
+libreria.limpiarPantalla()
