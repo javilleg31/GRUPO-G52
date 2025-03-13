@@ -10,12 +10,18 @@ ANALISIS:
     PROCESOS:  resultado = tabla * ?  #bucle con contador de uno en uno
     SALIDAS :  resultado
 '''
+import libreria
+
 #VARIABLES GLOBALES INICIALIZADAS
+MINIMO = 1
+MAXIMO = 20
+
 tabla = 0
 resultado = 0
 
 #ENTRADAS
-tabla = int(input("TABLA: "))
+#tabla = libreria.validarEntero ( "TABLA DEL: ", MINIMO, MAXIMO)  #int(input("TABLA: "))
+tabla = libreria.validarEntero ( "TABLA DEL: ", MINIMO) 
 
 #BUCLE FOR PARA RECORRER DE 1 A 10
 #[1]. MI VARIABLE DE CONTROL INICIA EN UN VALOR

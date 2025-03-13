@@ -5,6 +5,8 @@ perimetro = lado1 + lado2 + lado3
 '''
 import math
 #
+#import sys
+#sys.path.append("BIBLIOTECA")
 #from BIBLIOTECA import libreria
 import libreria
 
@@ -51,7 +53,7 @@ libreria.cabecera( "PROGRAMA ÁREA Y PERIMETRO TRIANGULO" )
 #correr el programa N veces
 for i in range(2):
     #INVOCAMOS UNA FUNCIÓN QUE PERMITA LEER CUALQUIER NUMERO, CON DIFERENTE ETIQUETA
-    lado1 = leerNumero( Fore.CYAN + "LADO 1: " + Style.RESET_ALL )
+    lado1 = libreria.validarFlotante("LADO 1:", 1)
     lado2 = leerNumero( Fore.CYAN + "LADO 2: " + Style.RESET_ALL )
     lado3 = leerNumero( Fore.CYAN + "LADO 3: " + Style.RESET_ALL )
 
