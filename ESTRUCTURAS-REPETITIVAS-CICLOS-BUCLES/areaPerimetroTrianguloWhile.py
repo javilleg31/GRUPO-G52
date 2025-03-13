@@ -4,10 +4,7 @@ Restricciones para calcular el área NO se requiere de la altura
 perimetro = lado1 + lado2 + lado3
 '''
 import math
-#
-#from BIBLIOTECA import libreria
 import libreria
-
 from colorama import Fore, Back, Style, init
 #Inicializar colorama
 init()
@@ -45,7 +42,7 @@ def leerNumero( etiqueta ):
 #ENTRADAS - BURBUJA LEER DATOS
 #INICIO DE PROGRAMA
 
-libreria.limpiarPantalla() #Limpia la pantalla de Terminal
+#libreria.limpiarPantalla() #Limpia la pantalla de Terminal
 libreria.cabecera( "PROGRAMA ÁREA Y PERIMETRO TRIANGULO" )
 
 #correr el programa N veces

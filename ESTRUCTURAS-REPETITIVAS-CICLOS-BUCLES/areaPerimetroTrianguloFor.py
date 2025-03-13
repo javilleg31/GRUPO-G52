@@ -4,10 +4,6 @@ Restricciones para calcular el área NO se requiere de la altura
 perimetro = lado1 + lado2 + lado3
 '''
 import math
-#
-#import sys
-#sys.path.append("BIBLIOTECA")
-#from BIBLIOTECA import libreria
 import libreria
 
 from colorama import Fore, Back, Style, init
