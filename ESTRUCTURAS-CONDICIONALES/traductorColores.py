@@ -7,6 +7,7 @@ ANALISIS:
               colorIngles = "GREEN"
     SALIDAS : colorIngles
 '''
+
 def traducirColor( colorEspanyol ):
     match colorEspanyol:
         case "amarillo":
