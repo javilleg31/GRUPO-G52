@@ -6,4 +6,7 @@ def leerFlotante ( etiqueta ):
 def leerCadena( etiqueta ):
     return  input(etiqueta).capitalize()
 
+def leerCaracter( etiqueta ):
+    return  input(etiqueta)[0].strip().upper()
+
 
