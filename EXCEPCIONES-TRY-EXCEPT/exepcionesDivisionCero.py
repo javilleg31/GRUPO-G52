@@ -3,7 +3,7 @@
 dividendo = 10
 divisor = 0
 resultado = 0
-
+#resultado = dividendo / divisor
 try:
     resultado = dividendo / divisor
 except ZeroDivisionError:
