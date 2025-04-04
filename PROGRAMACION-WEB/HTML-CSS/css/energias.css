@@ -50,4 +50,34 @@ a:hover {
     text-decoration: underline;
 }
 
+#solar {
+    background-color: #ff6347;
+}
+
+#unico {
+    background-color: #ffffff;
+    color: blueviolet;
+}
+
+.texto-resaltado {
+    background-color: green;
+    color: yellow
+}
+
+.padre {
+    display: flex;
+}
+
+button {
+    background: blue;
+    color: white;
+}
+
+button:hover {
+    background: greenyellow;
+}
+
+button:active {
+    background: red;
+}
 
