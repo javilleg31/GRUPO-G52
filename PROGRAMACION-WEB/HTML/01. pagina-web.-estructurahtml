@@ -1,0 +1,18 @@
+<!-- los comentarios - NO se tienen en cuenta-->
+<!DOCTYPE html>
+<!-- Lenguaje es español en Ingles-->
+<html lang="en">
+    <!-- meta datos informativos de la página -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="autor" content="Autor de la página">
+        <title>Document</title>
+    </head>
+
+    <!-- cuerpo de la página -->
+    <body>
+        <!-- Contenido de toda la página web-->
+    </body>
+
+</html>
