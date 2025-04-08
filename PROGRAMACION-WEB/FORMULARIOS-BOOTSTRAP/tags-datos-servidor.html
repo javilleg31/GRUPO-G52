@@ -18,40 +18,86 @@
                     <form action="#archivo_recibe.*" method="POST">
                         <div>                            
                             <label class="form-control" for="txtNombre">Nombres y Apellidos</label>
-                            <input class="form-control" type="text" id="txtNombre" name="txtNombre" placeholder="Nombre Completo">
+                            <input class="form-control" type="text" id="txtNombre" name="txtNombre" value="" placeholder="Nombre Completo">
                         </div>
                         <div>                           
                             <label class="form-control" for="datNacimiento">Fecha Nacimiento</label>
-                            <input class="form-control" type="date" id="datNacimiento" name="datNacimiento">
+                            <input class="form-control" type="date" id="datNacimiento" name="datNacimiento" value="">
                         </div>
                         <div>                           
                             <label class="form-control" for="monPreferido">Mes Preferido</label>
-                            <input class="form-control" type="month" id="monPreferido" name="monPreferido">
+                            <input class="form-control" type="month" id="monPreferido" name="monPreferido" value="">
                         </div>
                         <div>                           
                             <label class="form-control" for="numEdad">Mes Preferido</label>
-                            <input class="form-control" type="number" id="numEdad" name="numEdad" min="15" max="120" required>
+                            <input class="form-control" type="number" id="numEdad" name="numEdad" min="15" max="120" value="" required>
                         </div>
                         <div>                           
                             <label class="form-control" for="ranTemperatura">Temperatura</label>
-                            <input class="form-control" type="range" id="ranTemperatura" name="ranTemperatura" min="15" max="50" required>
+                            <input class="form-control" type="range" id="ranTemperatura" name="ranTemperatura" min="15" max="50" required oninput="output.value=this.value">
+                            <p>El valor actual es: 
+                            <output name="output" onforminput="value=ranTemperatura.value">0</output></p>
+
                         </div>
                        <!-- Un radio selecciona una y solamente una opcion de la lista OJO mismo name y id--> 
+                        
+                        <label class="form-control" for="radGenero">Género</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="radGenero" id="radGenero">
-
-                            <label class="form-check-label" for="radGenero">Másculino</label>
+                            <label class="form-check-label" for="radGenero" value="M">Másculino</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radGenero" id="radGenero">
-                            
+                            <input class="form-check-input" type="radio" name="radGenero" id="radGenero" value="F">                            
                             <label class="form-check-label" for="radGenero">Femenino</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radGenero" id="radGenero">
+                            <input class="form-check-input" type="radio" name="radGenero" id="radGenero" value="O">
                             
                             <label class="form-check-label" for="radGenero">Otro</label>
                         </div>
+                        <!-- FIN DE CREAR EL RADIO DE GENERO-->
+
+                        
+                       <!-- Un cckbox selecciona una o varias opciones de la lista OJO diferente name y id--> 
+                        
+                       <label class="form-control" for="">Hobbis</label>
+                       <div class="form-check">
+                           <input class="form-check-input" type="checkbox" name="chkFutbol" id="chkFutbol">
+                           <label class="form-check-label" for="radGenero" value="F">Futbol</label>
+                       </div>
+                       <div class="form-check">
+                           <input class="form-check-input" type="checkbox" name="chkBoleivol" id="chkBoleivol" value="F">                            
+                           <label class="form-check-label" for="radGenero">boleivol</label>
+                       </div>
+                       <div class="form-check">
+                           <input class="form-check-input" type="checkbox" name="chkBasketbool" id="chkBasketbool" value="O">
+                           
+                           <label class="form-check-label" for="radGenero">Basketbool</label>
+                       </div>
+                       <!-- FIN DE CREAR EL RADIO DE GENERO-->
+
+                        <!-- Combos o cuadros combinados o persina - el usuario selecciona uno y solamente un valor-->
+                         <div>
+                            <label class="form-check-label" for="cboCiudad">Ciudad Residencia</label>
+                            <select name="cboCiudad" id="cboCiudad">    
+                                <option value="ar">Argentina</option>    
+                                <option value="co">Colombia</option>
+                                <option value="es">España</option>
+                                <option value="br">Brasil</option>
+                            </select>                            
+                         </div>
+                         <!-- fin del combo o cuadro combinado-->
+
+                         <div>
+                            <label class="form-check-label my-3" for="cboCiudad">Comentarios del Bootcamp</label>
+                            <textarea name="txa" rows="5" cols="80" placeholder="Describa tanto lo bueno como lo malo para retroalimentar"></textarea>
+                         </div>
+
+                         <div>                            
+                            <label class="form-check-label my-3" for="filFoto">Su fotop</label>
+                            <input type="file" id="filFoto" name="filFoto" value="">
+                         </div>
+                         <button tipe="reset" class="btn btn-danger">LIMPIAR FORMULARIO</button>
                         <input type="submit" class="btn btn-primary w-100">
                     </form>
                 </div>

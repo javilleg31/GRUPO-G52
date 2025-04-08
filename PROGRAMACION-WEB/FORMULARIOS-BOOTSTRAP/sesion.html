@@ -13,17 +13,20 @@
   <body class="bg-secondary">
         <div class="container mt-5 bg-light p-4 round shadown-lg"> <!-- fondo claro, borde redondado y sombra-->
             <div class="row justify-content-center"> <!-- Centrar el formulario horizontalmente-->
-                <div class="col-md-6 col-lg-4">  <!-- Reduce que no sea de toda la pantalla-->
-                    <h3 class="text-center mb-4">CREDENCIALES</h3>
+                <div class="col-md-6 12">  <!-- Reduce que no sea de toda la pantalla-->
+                    
                     <form action="#archivo_recibe.*" method="POST">
-                        <div class="mb-3">
-                            <label class="form-control" for="emaMail">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="emaMail" name="emaMail" value="" required>
-                        </div>
-                        <div  class="mb-3">
-                            <label class="form-control" for="pasClave">Clave o Contraseña</label>
-                            <input type="password" class="form-control" id="pasClave" name="pasClave"  value="" required>
-                        </div>
+                        <fieldset>
+                            <legend>Datos de las credenciales</legend>
+                            <div class="mb-3">
+                                <label class="form-control" for="emaMail">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="emaMail" name="emaMail" value="" required>
+                            </div>
+                            <div  class="mb-3">
+                                <label class="form-control" for="pasClave">Clave o Contraseña</label>
+                                <input type="password" class="form-control" id="pasClave" name="pasClave"  value="" required>
+                            </div>
+                            </fieldset>
                         <input type="submit" class="btn btn-primary w-100">
                     </form>
                 </div>
