@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    
     <title>DATOS GENERALES</title>
   </head>
   <body class="bg-secondary">
@@ -15,10 +15,14 @@
             <div class="row justify-content-center"> <!-- Centrar el formulario horizontalmente-->
                 <div class="col-md6 col-lg-6">  <!-- Reduce que no sea de toda la pantalla-->
                     <h3 class="text-center mb-4">DATOS PERSONALES</h3>
-                    <form action="#archivo_recibe.*" method="POST">
+                    <form id="formulario" action="#archivo_recibe.*" method="POST">
                         <div>                            
                             <label class="form-control" for="txtNombre">Nombres y Apellidos</label>
                             <input class="form-control" type="text" id="txtNombre" name="txtNombre" value="" placeholder="Nombre Completo">
+                        </div>
+                        <div>                           
+                            <label class="form-control" for="datNacimiento">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" value="">
                         </div>
                         <div>                           
                             <label class="form-control" for="datNacimiento">Fecha Nacimiento</label>
@@ -29,7 +33,7 @@
                             <input class="form-control" type="month" id="monPreferido" name="monPreferido" value="">
                         </div>
                         <div>                           
-                            <label class="form-control" for="numEdad">Mes Preferido</label>
+                            <label class="form-control" for="numEdad">Edad</label>
                             <input class="form-control" type="number" id="numEdad" name="numEdad" min="15" max="120" value="" required>
                         </div>
                         <div>                           
@@ -66,12 +70,11 @@
                            <label class="form-check-label" for="radGenero" value="F">Futbol</label>
                        </div>
                        <div class="form-check">
-                           <input class="form-check-input" type="checkbox" name="chkBoleivol" id="chkBoleivol" value="F">                            
+                           <input class="form-check-input" type="checkbox" name="chkBoleivol" id="chkBoleivol" value="B">                            
                            <label class="form-check-label" for="radGenero">boleivol</label>
                        </div>
                        <div class="form-check">
-                           <input class="form-check-input" type="checkbox" name="chkBasketbool" id="chkBasketbool" value="O">
-                           
+                           <input class="form-check-input" type="checkbox" name="chkBasketbool" id="chkBasketbool" value="B">                           
                            <label class="form-check-label" for="radGenero">Basketbool</label>
                        </div>
                        <!-- FIN DE CREAR EL RADIO DE GENERO-->
@@ -90,7 +93,7 @@
 
                          <div>
                             <label class="form-check-label my-3" for="cboCiudad">Comentarios del Bootcamp</label>
-                            <textarea name="txa" rows="5" cols="80" placeholder="Describa tanto lo bueno como lo malo para retroalimentar"></textarea>
+                            <textarea id="txaObservacion" name="txaObservacion" rows="5" cols="80" placeholder="Describa tanto lo bueno como lo malo para retroalimentar"></textarea>
                          </div>
 
                          <div>                            
