@@ -1,0 +1,93 @@
+/* === General === */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* === Títulos === */
+h1, h2 {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* === Tabla === */
+.table {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.table th {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* === Botones personalizados === */
+.btn {
+    border-radius: 0.375rem;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* === Formularios === */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+select {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+    width: 100%;
+}
+
+form label {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* === Filtro === */
+#filtro {
+    width: 300px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+/* === Footer o info === */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
