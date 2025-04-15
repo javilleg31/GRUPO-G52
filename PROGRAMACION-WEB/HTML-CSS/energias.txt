@@ -1,0 +1,15 @@
+Energía Solar
+La energía solar se obtiene del sol y es una de las más accesibles y limpias. Puede ser utilizada para generar electricidad y calentar agua.
+
+Energía Eólica
+Se genera a partir del viento mediante aerogeneradores. Es ideal para zonas con corrientes de aire constantes.
+
+Energía Hidráulica
+Esta energía utiliza el movimiento del agua, como en ríos y presas, para generar electricidad de manera sostenible.
+
+Energía de Biomasa
+Proviene de materiales orgánicos como restos de plantas y desechos. Se puede transformar en biocombustibles o biogás.
+
+Energía Geotérmica
+Aprovecha el calor interno de la Tierra para generar electricidad o proporcionar calefacción en hogares y negocios.
+
